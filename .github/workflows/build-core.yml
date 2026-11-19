@@ -150,7 +150,7 @@ jobs:
           df -h /
 
       - name: Setup swap for LTO
-        if: ${{ inputs.lto != 'none' }}
+        if: false
         uses: pierotofy/set-swap-space@49819abfb41bd9b44fb781159c033dba90353a7c # v1.0
         with:
           swap-size-gb: 4
